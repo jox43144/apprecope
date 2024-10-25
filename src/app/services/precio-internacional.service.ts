@@ -10,6 +10,7 @@ private url ='https://api.recope.go.cr/precio-internacional';
   constructor(private http: HttpClient) { }
 
   public getPrecioInternacional(): Observable<PrecioInternacional> {
+    console.log('GET' + this.url);
 return this.http.get<PrecioInternacional>(this.url);
   }
 }
