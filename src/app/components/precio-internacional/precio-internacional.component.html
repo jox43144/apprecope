@@ -1,0 +1,18 @@
+<h1>Materiales</h1>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let materiales of precioInternacional.materiales">
+        <td>{{ materiales.nomprod }}</td>
+        <td>{{ materiales.precios }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -3,18 +3,20 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { provideHttpClient } from '@angular/common/http';
+import { PrecioInternacionalComponent } from './components/precio-internacional/precio-internacional.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrecioInternacionalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+ 
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
