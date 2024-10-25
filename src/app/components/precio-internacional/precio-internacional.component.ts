@@ -13,13 +13,14 @@ constructor(private precioInternacionalService: PrecioInternacionalService){
   this.titulo = 'Precio internacional';
 }
 ngOnInit(){
-  this.precioInternacionalService.getPrecioInternacional().subscribe(
+  this.precioInternacionalService.getPrecioInternacional().subscribe({next:
     (response) =>{
       this.precioInternacional = response;
     },
-    (error) => {
+   error: (error) => {
       console.log(error);
     }
+  }
   );
 }
 }
