@@ -1,4 +1,27 @@
-<router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="Formulario">
+        <form id="Elementos">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/internacional">Precios combustibles</a>
+                        
+                        <a href="/consumidor">Precios Consumidor</a>
 
-<app-precio-internacional></app-precio-internacional>
-</router-outlet>
+                        <a href="/plantel">Precios Plantel</a>
+                    </li>
+                </ul>
+            </nav>
+            <router-outlet></router-outlet>
+</form>
+    </div>
+</body>
+</html>
